@@ -33,11 +33,11 @@ public class RockPaperScissors {
                 System.out.println("Scissors vs Scissors! It's a...TIE!");}
             else if (Objects.equals(playerAChoice, "P") && Objects.equals(playerBChoice, "S")) {
                 System.out.println("Paper beats Scissors! Player A...WINS!");}
-            else if (Objects.equals(playerAChoice, "S") && (Objects.equals(playerBChoice, "P"))) {
-                System.out.println("Scissors beats Paper! Player A...WINS!");}
+            else if (Objects.equals(playerAChoice, "S") && Objects.equals(playerBChoice, "P")) {
+                System.out.println("Scissors beats Scissors! Player B...WINS!");}
             else if (Objects.equals(playerAChoice, "R") && Objects.equals(playerBChoice, "S")) {
                 System.out.println("Rock beats Scissors! Player A...WINS!");}
-            else if (Objects.equals(playerAChoice, "P")) && Objects.equals(playerBChoice, "S"); {
+            else if (Objects.equals(playerAChoice, "P") && Objects.equals(playerBChoice, "S")); {
                 System.out.println("Paper beats Scissors! Player B...WINS!");}
             else if (Objects.equals(playerAChoice, "S") && Objects.equals(playerBChoice, "P")) {
                 System.out.println("Scissors beats Paper! Player B...WINS!");}
