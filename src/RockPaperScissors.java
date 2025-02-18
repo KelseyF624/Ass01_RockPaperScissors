@@ -6,6 +6,7 @@ public class RockPaperScissors {
         //scissors = 3
         int playerAChoice;
         int playerBChoice;
+        int replayChoice;
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Rock Paper Scissors!");
         do {
@@ -46,7 +47,8 @@ public class RockPaperScissors {
             else if (playerAChoice == 3 && playerBChoice == 1) {
                 System.out.println("Rock beats Scissors! Player B...WINS!");}
             System.out.println("Would you like to play again? (0 to replay. 4 to terminate.)");
-            if (sc.nextInt() == 4) {System.out.println("Thank you for playing!");}
-        }while (sc.nextInt()== 0); {System.out.println("Playing again!");}
+            replayChoice = sc.nextInt();
+            if (replayChoice== 4) {System.out.println("Thank you for playing!");}
+        }while (replayChoice== 0);
     }
 }
