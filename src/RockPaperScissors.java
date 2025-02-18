@@ -1,15 +1,16 @@
 import java.util.Scanner;
 public class RockPaperScissors {
     public static void main(String[] args) {
-        //int rock = 1;
-        //int paper = 2;
-        //int scissors = 3;
+        //rock = 1
+        //paper = 2
+        //scissors = 3
         int playerAChoice;
         int playerBChoice;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Rock Paper Scissors!");
         do {
-            System.out.println("Welcome to Rock Paper Scissors! Please enter your choice Player A: 1=Rock, 2=Paper, 3=Scissors!");
             do {
+                System.out.println("Please enter your choice Player A: 1=Rock, 2=Paper, 3=Scissors!");
                 playerAChoice = sc.nextInt();
                 if (playerAChoice <= 0) {
                     System.out.println("Please enter a valid choice!");}
@@ -46,6 +47,6 @@ public class RockPaperScissors {
                 System.out.println("Rock beats Scissors! Player B...WINS!");}
             System.out.println("Would you like to play again? (0 to replay. 4 to terminate.)");
             if (sc.nextInt() == 4) {System.out.println("Thank you for playing!");}
-        }while (sc.nextInt()==0); {System.out.println("Playing again!");}
+        }while (sc.nextInt()== 0); {System.out.println("Playing again!");}
     }
 }
