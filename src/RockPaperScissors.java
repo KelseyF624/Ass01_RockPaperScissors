@@ -16,24 +16,24 @@ public class RockPaperScissors {
                 playerAChoice = sc.nextLine();
                 if (playerAChoice != null) {
                     System.out.println("Please enter a valid choice!");}
-            } while (Objects.equals(playerAChoice, "R")); || (Objects.equals(playerAChoice, "P")) || (Objects.equals(playerAChoice, "S"));
+            } while (Objects.equals(playerAChoice, "R")); (Objects.equals(playerAChoice, "P")) || (Objects.equals(playerAChoice, "S"));
             do {
                 System.out.println("Player B please enter your choice:");
                 playerBChoice = sc.nextLine();
                 if (playerBChoice != null) {
                     System.out.println("Please enter a valid choice!");}
-            } while (Objects.equals(playerBChoice, "R")) || Objects.equals(playerBChoice, "P")) || (Objects.equals(playerBChoice, "S"));
+            } while (Objects.equals(playerBChoice, "R")); || Objects.equals(playerBChoice, "P");) || (Objects.equals(playerBChoice, "S"));
             System.out.println("Player A picked: " + playerAChoice);
             System.out.println("Player B picked: " + playerBChoice);
-            if (Objects.equals(playerAChoice, "R") && (Objects.equals(playerBChoice, "R")) {
+            if (Objects.equals(playerAChoice, "R") && (Objects.equals(playerBChoice, "R"))) {
                 System.out.println("Rock vs. Rock! It's a...TIE!");}
-            else if (Objects.equals(playerAChoice, "P") && (Objects.equals(playerBChoice, "P")) {
+            else if (Objects.equals(playerAChoice, "P") && (Objects.equals(playerBChoice, "P"))) {
                 System.out.println("Paper vs. Paper! It's a...TIE!");}
             else if (Objects.equals(playerAChoice, "S") && Objects.equals(playerBChoice, "S")) {
                 System.out.println("Scissors vs Scissors! It's a...TIE!");}
             else if (Objects.equals(playerAChoice, "P") && Objects.equals(playerBChoice, "S")) {
                 System.out.println("Paper beats Scissors! Player A...WINS!");}
-            else if (Objects.equals(playerAChoice, "S") && (Objects.equals(playerBChoice, "P") {
+            else if (Objects.equals(playerAChoice, "S") && (Objects.equals(playerBChoice, "P"))) {
                 System.out.println("Scissors beats Paper! Player A...WINS!");}
             else if (Objects.equals(playerAChoice, "R") && Objects.equals(playerBChoice, "S")) {
                 System.out.println("Rock beats Scissors! Player A...WINS!");}
