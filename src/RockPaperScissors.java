@@ -26,16 +26,24 @@ public class RockPaperScissors {
             } while (playerBChoice <= 0 || playerBChoice >= 4);
             System.out.println("Player A picked: " + playerAChoice);
             System.out.println("Player B picked: " + playerBChoice);
-            if (playerAChoice == playerBChoice) {
-                System.out.println("It's a...TIE!");}
+            if (playerAChoice == 1 && playerBChoice == 1) {
+                System.out.println("Rock vs. Rock! It's a...TIE!");}
+            else if (playerAChoice == 2 && playerBChoice == 2) {
+                System.out.println("Paper vs. Paper! It's a...TIE!");}
+            else if (playerAChoice == 3 && playerBChoice == 3) {
+                System.out.println("Scissors vs Scissors! It's a...TIE!");}
             else if (playerAChoice == 2 && playerBChoice == 1) {
-                System.out.println("Player A...WINS!");}
+                System.out.println("Paper beats Scissors! Player A...WINS!");}
             else if (playerAChoice == 3 && playerBChoice == 2) {
-                System.out.println("Player A...WINS!");}
+                System.out.println("Scissors beats Paper! Player A...WINS!");}
             else if (playerAChoice == 1 && playerBChoice == 3) {
-                System.out.println("Player A...WINS!");}
-            else {
-                System.out.println("Player B...WINS!");}
+                System.out.println("Rock beats Scissors! Player A...WINS!");}
+            else if (playerAChoice == 1 && playerBChoice == 2) {
+                System.out.println("Paper beats Scissors! Player B...WINS!");}
+            else if (playerAChoice == 2 && playerBChoice == 3) {
+                System.out.println("Scissors beats Paper! Player B...WINS!");}
+            else if (playerAChoice == 3 && playerBChoice == 1) {
+                System.out.println("Rock beats Scissors! Player B...WINS!");}
             System.out.println("Would you like to play again? (Y/N)");
             String answer = sc.nextLine();
             if (answer.equalsIgnoreCase("N")) {
