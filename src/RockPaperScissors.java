@@ -44,10 +44,8 @@ public class RockPaperScissors {
                 System.out.println("Scissors beats Paper! Player B...WINS!");}
             else if (playerAChoice == 3 && playerBChoice == 1) {
                 System.out.println("Rock beats Scissors! Player B...WINS!");}
-            System.out.println("Would you like to play again? (Y/N)");
-            String answer = sc.nextLine();
-            if (answer.equalsIgnoreCase("N")) {
-                System.out.println("Thank you for playing!");}
-        }while (answer.equalsIgnoreCase("Y")); {System.out.println("Playing again!");}
+            System.out.println("Would you like to play again? (0 to replay. 4 to terminate.)");
+            if (sc.nextInt() == 4) {System.out.println("Thank you for playing!");}
+        }while (sc.nextInt()==0); {System.out.println("Playing again!");}
     }
 }
