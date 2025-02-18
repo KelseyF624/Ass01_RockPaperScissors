@@ -16,13 +16,13 @@ public class RockPaperScissors {
                 playerAChoice = sc.nextLine();
                 if (playerAChoice != null) {
                     System.out.println("Please enter a valid choice!");}
-            } while (Objects.equals(playerAChoice, "R")); Objects.equals(playerAChoice, "P");; Objects.equals(playerAChoice, "S");;
+            } while (Objects.equals(playerAChoice, "R")); Objects.equals(playerAChoice, "P"); Objects.equals(playerAChoice, "S");
             do {
                 System.out.println("Player B please enter your choice:");
                 playerBChoice = sc.nextLine();
                 if (playerBChoice != null) {
                     System.out.println("Please enter a valid choice!");}
-            } while (Objects.equals(playerBChoice, "R")); Objects.equals(playerBChoice, "P");; Objects.equals(playerBChoice, "S");;
+            } while (Objects.equals(playerBChoice, "R")); Objects.equals(playerBChoice, "P"); Objects.equals(playerBChoice, "S");
             System.out.println("Player A picked: " + playerAChoice);
             System.out.println("Player B picked: " + playerBChoice);
             if (Objects.equals(playerAChoice, "R") && (Objects.equals(playerBChoice, "R"))) {
